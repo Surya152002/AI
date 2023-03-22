@@ -68,7 +68,7 @@ function generateTimetable() {
 
 // Validate inputs
 if (!classes || !teachers || !rooms) {
-return "Please provide values for all inputs";
+  return "Please provide values for all inputs";
 }
 
 // Convert input strings into arrays
@@ -78,25 +78,25 @@ const roomsArr = rooms.split(",");
 
 // Check if inputs have the same length
 if (classesArr.length !== teachersArr.length || classesArr.length !== roomsArr.length) {
-return "Number of classes, teachers, and rooms should be equal";
+  return "Number of classes, teachers, and rooms should be equal";
 }
 
 // Create a dictionary to map class names to indices
 const classIndices = {};
 for (let i = 0; i < classesArr.length; i++) {
-classIndices[classesArr[i]] = i;
+  classIndices[classesArr[i]] = i;
 }
 
 // Create a dictionary to map teacher names to indices
 const teacherIndices = {};
 for (let i = 0; i < teachersArr.length; i++) {
-teacherIndices[teachersArr[i]] = i;
+  teacherIndices[teachersArr[i]] = i;
 }
 
 // Create a dictionary to map room names to indices
 const roomIndices = {};
 for (let i = 0; i < roomsArr.length; i++) {
-roomIndices[roomsArr[i]] = i;
+  roomIndices[roomsArr[i]] = i;
 }
 
 // Create the graph based on the input arrays
