@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timetable Generator</title>
+</head>
+<body>
+	<h1>Timetable Generator</h1>
+	<form>
+		<label for="classes">Classes:</label>
+		<select id="classes" name="classes">
+			<option value="class1">Class 1</option>
+			<option value="class2">Class 2</option>
+			<option value="class3">Class 3</option>
+		</select>
+		<label for="teachers">Teachers:</label>
+		<select id="teachers" name="teachers">
+			<option value="teacher1">Teacher 1</option>
+			<option value="teacher2">Teacher 2</option>
+			<option value="teacher3">Teacher 3</option>
+		</select>
+		<label for="rooms">Rooms:</label>
+		<select id="rooms" name="rooms">
+			<option value="room1">Room 1</option>
+			<option value="room2">Room 2</option>
+			<option value="room3">Room 3</option>
+		</select>
+		<button onclick="generateTimetable()">Generate Timetable</button>
+	</form>
+	<table id="timetable">
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Class</th>
+				<th>Teacher</th>
+				<th>Room</th>
+				<th>Rating</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Timetable rows will be generated dynamically using JavaScript -->
+		</tbody>
+	</table>
+	<script src="timetable.js"></script>
+</body>
+</html>
